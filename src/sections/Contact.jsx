@@ -44,7 +44,7 @@ const Contact = () => {
         <img
           src="/assets/terminal.png"
           alt="terminal-bg"
-          className="absolute inset-0 min-h-screen"
+          className="hidden absolute md:flex inset-0 min-h-screen object-cover"
         />
 
         <div className="contact-container">
@@ -88,7 +88,7 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 required
-                rows={3}
+                rows={2}
                 className="field-input"
                 placeholder="Share your thoughts or inquiries..."
               />
