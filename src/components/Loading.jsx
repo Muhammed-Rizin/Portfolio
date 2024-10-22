@@ -1,7 +1,16 @@
 import { Html, useProgress } from "@react-three/drei";
+import { useEffect, useState } from "react";
 
 const CanvasLoader = () => {
   const { progress } = useProgress();
+  const [bufferProgress, setBufferProgress] = useState(0);
+
+  useEffect(() => {
+    if (progress > bufferProgress) {
+      setBufferProgress(progress);
+    }
+  }, [progress]); //eslint-disable-line
+
   return (
     <Html
       as="div"
@@ -22,10 +31,11 @@ const CanvasLoader = () => {
           marginTop: 40,
         }}
       >
-        {progress !== 0 ? `${progress.toFixed(2)}%` : "Loading..."}
+        {bufferProgress !== 0 ? `${bufferProgress.toFixed(2)}%` : "Loading..."}
       </p>
     </Html>
   );
 };
+
 
 export default CanvasLoader;

@@ -8,7 +8,7 @@ import Experience from "./sections/Experience";
 
 const App = () => {
   return (
-    <main className="max-w-7xl mx-auto">
+    <main className="w-full mx-auto">
       <NavBar />
       <Hero />
       <About />

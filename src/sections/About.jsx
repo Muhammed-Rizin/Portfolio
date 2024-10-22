@@ -45,7 +45,7 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <div className="flex items-center gap-3 flex-wrap">
+            <div className="flex items-center gap-3 flex-wrap justify-center">
               {technologies.map((tag, index) => (
                 <div key={index} className="technologies-logo">
                   <img src={tag.path} alt={tag.name} />
