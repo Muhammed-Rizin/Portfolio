@@ -19,7 +19,7 @@ const Footer = () => {
         ))}
       </div>
 
-      <p className="text-white-500">© 2024 Rizin. All rights reserved.</p>
+      <p className="text-white-500">© 2025 Rizin. All rights reserved.</p>
     </footer>
   );
 };

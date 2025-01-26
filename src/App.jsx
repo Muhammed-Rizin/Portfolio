@@ -5,10 +5,12 @@ import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Experience from "./sections/Experience";
+import Resume from "./components/Resume";
 
 const App = () => {
   return (
     <main className="w-full mx-auto">
+      <Resume />
       <NavBar />
       <Hero />
       <About />
